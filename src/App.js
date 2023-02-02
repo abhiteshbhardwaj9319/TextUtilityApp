@@ -35,11 +35,9 @@ function App() {
   return (
     <>
           <Navbar title='TextUtils' home='Home' mode={mode} togglemode={togglemode}/>
-          <Textutil Text="Enter Your Text Below" mode={mode} showAlert={showAlert}/>
           <Alert alert={alert}/>
-      <br />
-      <hr>
-      </hr>
+          <Textutil Text="Try Text Utils - Word Counter ,Snake_Case ,Camel Case and many more.. " mode={mode} showAlert={showAlert}/>
+    
     </>
     
   );
