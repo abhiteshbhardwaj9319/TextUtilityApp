@@ -36,7 +36,7 @@ function App() {
     <>
           <Navbar title='TextUtils' home='Home' mode={mode} togglemode={togglemode}/>
           <Alert alert={alert}/>
-          <Textutil Text="Try Text Utils - Word Counter ,Snake_Case ,Camel Case and many more.. " mode={mode} showAlert={showAlert}/>
+          <Textutil Text="Try Text Utils ... " mode={mode} showAlert={showAlert}/>
     
     </>
     

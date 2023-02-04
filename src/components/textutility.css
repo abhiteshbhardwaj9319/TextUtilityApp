@@ -1,5 +1,18 @@
 .btnsgrp{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.text{
+    width: 95%;
+    margin: 0px 5%;
+    
+
+}
+
+.textarea{
+    width: 90%;
+    
     
 }
