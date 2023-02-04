@@ -126,12 +126,12 @@ const handleOnChange = (event) => {
     // }
     return (
         < >
-            <div style={{ color: props.mode === 'dark' ? 'white' : '#454141' }}>
+            <div className="text" style={{ color: props.mode === 'dark' ? 'white' : '#454141' }}>
                 <h2 >{props.Text}</h2>
-                <div className="mb-3 "  >
+                <div className="mb-3 textarea"  >
                     <textarea className="form-control" value={text} onChange={handleOnChange} style={{ color: props.mode === 'dark' ? 'white' : 'black', backgroundColor: props.mode === 'dark' ? 'rgb(33 37 41)' : 'white' }} id="mybox" rows="8"></textarea>
                 </div>
-                <div class='btnsgrp'>
+                <div className='btnsgrp'>
 
                 <button className='btn btn-danger mx-1 my-2' onClick={OriginalText}>Original Text</button>
                 <button disabled={text.length===0} className='btn btn-info mx-1 my-2' onClick={handleUpClick}>Convert To UpperCase</button>
@@ -148,10 +148,9 @@ const handleOnChange = (event) => {
                 {/* <button className='btn btn-info mx-1' onClick={Grammercheck} >Grammer check</button> */}
                 </div>
                 <container>
-                    <div className='my-3' >
+                    <div className='my-3 ' >
                         <h4>Text Summary</h4>
                         <h7>{text.length}  Characters and {text.split(" ").filter((element) => { return element.length !== 0 }).length} Words </h7><br></br>
-                        {/* <h5>{text.length}  Characters and {text.trim().length ? text.trim().split(/\s+/).length : 0} Words </h5> */}
                         <h7>{0.008 * text.split(" ").filter((element) => { return element.length !== 0 }).length} Minutes Read</h7>
                     </div>
                 </container>
