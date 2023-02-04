@@ -2,11 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
     
 }
 .text{
-    width: 100%;
+    width: 95%;
     margin: 0px 5%;
     
 
