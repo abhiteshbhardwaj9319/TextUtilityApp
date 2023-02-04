@@ -131,7 +131,7 @@ export default function Textarea(props) {
                 <container>
                     <div className='my-3 ' >
                         <h4>Text Summary</h4>
-                        <h7>{text.length}  Characters and {text.split(" ").filter((element) => { return element.length !== 0 }).length} Words </h7><br></br>
+                        <h7>{text.length}  Characters and {text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} Words </h7><br></br>
                         <h7>{0.008 * text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} Minutes Read</h7>
                     </div>
                 </container>
